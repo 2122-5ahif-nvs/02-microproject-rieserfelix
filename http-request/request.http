@@ -1,0 +1,66 @@
+POST http://localhost:8080/api/product
+Content-Type: application/json
+
+{
+   "title": "Dicke VVS Chain Iced Out",
+   "year": 2020,
+   "price": 100,
+   "isNew": true,
+   "serialNo": 1234
+}
+
+###
+
+POST http://localhost:8080/api/product
+Content-Type: application/json
+
+{
+"title": "Brachialer Wecker besetzt mit dicken Baguetts von Rolex",
+"year": 2010,
+"price": 40000,
+"isNew": false,
+"serialNo": 1888
+}
+
+###
+
+GET http://localhost:8080/api/product/1234
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/product
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/api/product/1234
+Content-Type: application/json
+
+{
+  "title": "Neuer Klunker",
+  "year": 4000,
+  "price": 10,
+  "isNew": true,
+  "serialNo": 1234
+}
+
+###
+
+DELETE http://localhost:8080/api/product/1234
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/customer
+Content-Type: application/json
+
+{
+  "firstName": "Felix",
+  "lastName": "Rieser",
+  "birthDate": null
+}
+###
+
+GET http://localhost:8080/api/customer?id=1
+Accept: application/json

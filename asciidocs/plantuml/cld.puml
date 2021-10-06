@@ -1,0 +1,35 @@
+//Please look at README.MD
+//Every product is unique!
+
+@startuml
+class Product {
+    String title
+    int year
+    double price
+    boolean isNew
+    long serialNo
+}
+
+class Customer {
+    long Id
+    String firstName
+    String lastName
+    LocalDate birthDate
+}
+
+class Invoice {
+   List<Product> products
+   Customer customer
+   double price
+   LocalDate billDate
+}
+
+
+Customer "1" -up-> "*" Invoice: gets >
+Product "*" <- "1" Invoice : has <
+
+
+hide Product methods
+hide Invoice methods
+hide Customer methods
+@enduml
