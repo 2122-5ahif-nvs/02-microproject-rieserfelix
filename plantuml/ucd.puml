@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+actor Customer
+
+rectangle Jeweler {
+
+  usecase "Buys Jewelery" as UC1
+  usecase "See Invoice" as UC2
+  usecase "Display all available jeweleries" as UC3
+
+Customer -- UC1
+Customer -- UC2
+Customer -- UC3
+
+@enduml
