@@ -2,7 +2,7 @@
 
 ## Description
 
-    It's an Webprogram which uses CRUD Functions. Swagger is the tool for the documentation. For the Testing
+    It's a Webprogram which uses CRUD Functions. Swagger is the tool for the documentation. For the Testing
     we use http-request.
     
     The Project is a Jewelerstore where a costumer can buy products.
