@@ -14,9 +14,24 @@ ifdef::backend-html5[]
 // print the toc here (not at the default position)
 //toc::[]
 
-== Classdiagram
+== Description
+It's a Webprogram which uses CRUD Functions. Swagger is the tool for the documentation. For the Testing
+we use http-request.
+
+The Project is a Jewelerstore where a costumer can buy products.
+
+Every jewellery is unique. So one jewellery can only have one invoice.
+
+== Class diagram
 
 [plantuml, cld, png, align=left]
 ----
 include::plantuml/cld.puml[]
+----
+
+== Use case diagram
+
+[plantuml, ucd, png, align=left]
+----
+include::plantuml/ucd.puml[]
 ----
